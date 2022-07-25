@@ -2,19 +2,34 @@
 <html>
 
 <head>
-    <title>notice</title>
+    <title>Half Leave Tool</title>
 </head>
 
 <body>
+    <h1>MHRise 鉱石採取半放置ツール</h1>
+    <h2>通常時</h2>
     <input type="button" value="Start 4min" onclick="OnButton1Click();">
     <br>
     <div id="output1"></div>
+    <h2>トレトレーズン団子発動時</h2>
     <input type="button" value="Start 3min" onclick="OnButton2Click();">
     <br>
     <div id="output2"></div>
     <p>音量:
         <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
         <span id="vol_range">0.5</span>
+    </p>
+    <h3>操作説明</h3>
+    <p>
+        ①通常時<br>
+        通常時はStart 4minボタンを2つ目の鉱石採取と同時に押下する。<br>
+        開始成功すると猫の鳴き声がします。<br>
+        4分ごとに猫の鳴き声がするので聞こえたらAボタン連打開始。<br>
+        <br>
+        ②トレトレーズン団子発動時<br>
+        トレトレーズン団子発動時はStart 3minボタンを2つ目の鉱石採取と同時に押下する。<br>
+        開始成功すると猫の鳴き声がします。<br>
+        3分15秒ごとに猫の鳴き声がするので聞こえたらAボタン連打開始。<br>
     </p>
     <script src="index.js"></script>
 

@@ -26,7 +26,7 @@ function sound(button_type) {
 function OnButton1Click() {
     sound(0);//猫
     //setTimeout('sound(1)', '10800000');
-    setInterval('sound(0)', '240000');
+    setInterval('sound(0)', '245000');//4分5秒
     min4 = document.getElementById('output1');
     min4.innerHTML = "Start 4mititue";
     min3 = document.getElementById('output2');
