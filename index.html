@@ -6,13 +6,18 @@
 </head>
 
 <body>
-    <input type="button" value="Start" onclick="OnButton1Click();">
+    <input type="button" value="Start 4min" onclick="OnButton1Click();">
     <br>
     <div id="output1"></div>
-    <input type="button" value="Start" onclick="OnButton2Click();">
+    <input type="button" value="Start 3min" onclick="OnButton2Click();">
     <br>
     <div id="output2"></div>
+    <p>音量:
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+        <span id="vol_range">0.5</span>
+    </p>
     <script src="index.js"></script>
+
 </body>
 
 </html>

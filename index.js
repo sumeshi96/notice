@@ -1,22 +1,35 @@
-function sound(type, sec) {
-    const ctx = new AudioContext()
-    const osc = ctx.createOscillator()
-    osc.type = type
-    osc.connect(ctx.destination)
-    osc.start()
-    osc.stop(sec)
+let music = new Audio('cat.mp3');
+
+//ボリュームの設定
+let slider_volume = document.getElementById("volume");
+let slider_range = document.getElementById("vol_range")
+
+music.volume = slider_volume.value;//ボリュームの初期値
+
+//ボリューム変更時
+slider_volume.addEventListener("change", function () {
+    music.volume = slider_volume.value;
+    slider_range.textContent = slider_volume.value;
+}, false);
+
+function sound() {
+    music.play();//音鳴らす
 }
 
 function OnButton1Click() {
-    sound("square", 0.1);
-    setInterval('sound("square", 0.1)', '240000');//240000ms=4min
-    target = document.getElementById("output1");
-    target.innerHTML = "Starting!";
+    sound();
+    setInterval('sound()', '240000');
+    min4 = document.getElementById('output1');
+    min4.innerHTML = "Start 4mititue";
+    min3 = document.getElementById('output2');
+    min3.innerHTML = "";
 }
 
 function OnButton2Click() {
-    sound("square", 0.1);
-    setInterval('sound("square", 0.1)', '180000');//180000ms=3min
-    target = document.getElementById("output2");
-    target.innerHTML = "Starting!";
+    sound();
+    setInterval('sound()', '180000');
+    min3 = document.getElementById('output2');
+    min3.innerHTML = "Start 3mititue";
+    min4 = document.getElementById('output1');
+    min4.innerHTML = "";
 }
