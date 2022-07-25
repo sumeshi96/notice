@@ -25,7 +25,7 @@ function sound(button_type) {
 //4分ごとに音を鳴らす
 function OnButton1Click() {
     sound(0);//猫
-    setTimeout('sound(1)', '10800000');
+    //setTimeout('sound(1)', '10800000');
     setInterval('sound(0)', '240000');
     min4 = document.getElementById('output1');
     min4.innerHTML = "Start 4mititue";
@@ -36,7 +36,7 @@ function OnButton1Click() {
 //3分ごとに音を鳴らす
 function OnButton2Click() {
     sound(0);//猫
-    setTimeout('sound(1)', '9000000');
+    //setTimeout('sound(1)', '9000000');
     setInterval('sound(0)', '180000');
     min3 = document.getElementById('output2');
     min3.innerHTML = "Start 3mititue";
