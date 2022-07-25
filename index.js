@@ -33,11 +33,11 @@ function OnButton1Click() {
     min3.innerHTML = "";
 }
 
-//3分ごとに音を鳴らす
+//3分15秒ごとに音を鳴らす
 function OnButton2Click() {
     sound(0);//猫
     //setTimeout('sound(1)', '9000000');
-    setInterval('sound(0)', '180000');
+    setInterval('sound(0)', '195000 ');
     min3 = document.getElementById('output2');
     min3.innerHTML = "Start 3mititue";
     min4 = document.getElementById('output1');
